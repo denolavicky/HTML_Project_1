@@ -4,41 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Project 1</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <!-- This is the Heading -->
-      <h1>Denolavicky</h1>
-      <p>Product Designer | Entrepreneur</p>
+      <a href="index.html" class="firstHeader">
+        <h1>Denolavicky</h1>
+        <p>Product Designer | Entrepreneur</p>
+      </a>
 
       <!-- This is the Navbar -->
-      <nav>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/html_pages/about.html">About</a></li>
-          <li><a href="/html_pages/resume.html">Resume</a></li>
-          <li><a href="/html_pages/work.html">Work</a></li>
-          <li><a href="/html_pages/contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="NavHeader">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html_pages/about.html">About</a></li>
+            <li><a href="/html_pages/resume.html">Resume</a></li>
+            <li><a href="/html_pages/work.html">Work</a></li>
+            <li><a href="/html_pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- This is the button header -->
+      <div class="btnClass">
+        <button>Download CV</button>
+      </div>
     </header>
+
     <main>
-      <div>
-        <img
-          src="/Img_Snd/WhatsApp Image 2025-11-13 at 08.31.47.jpeg"
-          width="200px"
-          alt="A picture of Vicky"
-        />
+      <div class="Caption">
         <p>
           I’m a product designer with a passion for crafting thoughtful
           experiences, and in my free time, I enjoy listening to podcasts.
         </p>
-      </div>
-      <hr />
 
+        <img
+          src="/Img_Snd/WhatsApp Image 2025-11-13 at 08.31.47.jpeg"
+          alt="A picture of Vicky"
+        />
+      </div>
 
       <!-- About Me section -->
-      <div>
+      <div class="About">
         <h1>About Me</h1>
         <p>
           Hi, I’m Adenola Victoria, a passionate product designer dedicated to
@@ -54,49 +63,69 @@
           My goal is to create products that are not just visually appealing,
           but also meaningful and impactful for users.
         </p>
+
+        <button>Learn More</button>
       </div>
 
-      <hr />
-
       <!-- Work Experience section -->
-      <div>
+      <div class="Work">
         <h1>Work Experience</h1>
         <ul>
           <li>Product Designer | Vosyn AI</li>
           <li>Graphics Designer | Diadem Elite Limited</li>
         </ul>
       </div>
-      <hr />
 
       <!-- Hobbies section -->
-      <div>
+      <div class="Hobbies">
         <h1>Hobbies</h1>
-        <ul>
-          <li>Reading</li>
-          <img src="/Img_Snd/Reading.jpg" alt="a picture of me reading" />
-          <li>Listening to podcasts</li>
-          <p>The Candance Owens Podcast</p>
-          <a href="https://www.youtube.com/live/1hcjQGgvxUY?si=2dkfQ4A0DnUGsodJ"
-            ><img src="/Img_Snd/Candace.jpg" width="120px" alt="This is Candance"
-          /></a>
+
+        <div class="hobby">
+          <p>Reading</p>
+          <img src="/Img_Snd/Reading.jpg" alt="A picture of me reading" />
+        </div>
+
+        <div class="hobby">
+          <p>Listening to Podcasts: The Candace Owens Podcast</p>
+          <a
+            href="https://www.youtube.com/live/1hcjQGgvxUY?si=2dkfQ4A0DnUGsodJ"
+          >
+            <img
+              src="/Img_Snd/Candace.jpg"
+              width="120px"
+              alt="Candace Owens Podcast"
+            />
+          </a>
           <audio controls>
-            <source src="/Img_Snd/kornevmusic-epic-478847.mp3" type="audio/mpeg" />
+            <source
+              src="/Img_Snd/kornevmusic-epic-478847.mp3"
+              type="audio/mpeg"
+            />
             Your browser does not support the audio element.
           </audio>
+        </div>
+
+        <div class="hobby">
           <p>Shits and Gigs Podcast</p>
-          <a href="https://youtu.be/RfyTdzaDxJ4?si=y1yTJQrgVRTiM0fA"
-            ><img src="/Img_Snd/Gigs.jpg" width="120px" alt="This is shxtngigs"
-          /></a>
+          <a href="https://youtu.be/RfyTdzaDxJ4?si=y1yTJQrgVRTiM0fA">
+            <img
+              src="/Img_Snd/Gigs.jpg"
+              width="120px"
+              alt="Shits and Gigs Podcast"
+            />
+          </a>
           <audio controls>
-            <source src="/Img_Snd/kornevmusic-epic-478847.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
+            <source
+              src="/Img_Snd/kornevmusic-epic-478847.mp3"
+              type="audio/mpeg"
+            />
+            
           </audio>
-        </ul>
+        </div>
       </div>
 
-      <hr />
       <!-- This is the Contact me section -->
-      <div>
+      <div class="Contact">
         <h1>Contact me</h1>
         <form action="">
           <div>
@@ -123,15 +152,15 @@
             ></textarea>
           </div>
 
-          <input type="button" value="Submit" />
+          <input type="submit" value="Submit" />
         </form>
       </div>
 
-      <hr />
+      
     </main>
 
     <!-- This is the footer -->
-    <footer>
+    <footer class="footer">
       <p>© 2026 denolavicky</p>
       <nav>
         <a href="/index.html">Home</a>

@@ -1,0 +1,313 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+header{
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  gap: 300px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
+}
+
+.firstHeader{
+  padding: 20px;
+  color: #001F54;
+  text-decoration: none;
+  
+}
+
+/* Header button styling */
+.btnClass{
+  padding: 20px;
+  border: none;
+   transition: all 0.3s ease;
+  
+}
+button{
+  background-color: aliceblue;
+  color: #001F54;
+  padding: 20px;
+  border-radius: 9px;
+  border: 1px solid #333333;
+  cursor: pointer;
+   font-weight: 600;
+
+}
+
+button:hover{
+  background-color: #001F54;
+  border: 1px solid #fafafa;
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+  color: #fafafa;
+}
+
+/* Nav Bar styling */
+.NavHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  
+}
+
+nav a{
+  text-decoration: none;
+  display: flex;
+  color: #333333;
+  font-size: 20px;
+}
+
+nav a:hover{
+  color: #001F54;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+
+
+/* Body styling */
+
+
+
+/* hero section styling */
+.Caption{
+display: flex;
+align-items: center;
+gap: 40px;
+margin: 50px 0;
+justify-content: center;
+
+}
+
+.Caption p{
+  color: #333333;
+  font-size: 40px;
+  width: 350px;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+
+.Caption img{
+  width: 350px;
+  border-radius: 9px;
+  max-width: 40%;
+  object-fit: cover;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  
+}
+
+/* About me styling */
+.About{
+  padding: 80px 120px;
+  gap: 30px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 20px ; */
+  /* border: 1px solid #001F54; */
+}
+
+.About h1{
+  font-size: 42px;
+  font-weight: bold;
+  color: #001F54;
+  position:relative;
+  text-align: center;
+  /* margin-bottom: 40px; */
+
+}
+
+.About p{
+  text-align: center;
+  font-size: 18px;
+  
+}
+/* About button */
+.About button{
+   background-color: aliceblue;
+  color: #001F54;
+  padding: 20px;
+  border-radius: 9px;
+  border: 1px solid #001F54;
+  cursor: pointer;
+   font-weight: 600;
+}
+
+.About button:hover{
+  background-color: #001F54;
+  border: 1px solid #fafafa;
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+  color: #fafafa;
+}
+
+/* work experinece styling  */
+.Work{
+   padding: 80px 120px;  
+   margin: 30px;
+   
+}
+
+.Work h1 {
+  text-align: center;          
+  font-size: 42px;
+  margin-bottom: 40px;         
+  color: #001F54;
+  position: relative;
+}
+
+.Work li {
+  font-size: 18px;
+  line-height: 2;
+  color: #444;
+  margin-bottom: 15px;         
+  padding-left: 10px;          
+  position: relative;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Hobbies section styling */
+.Hobbies{
+   padding: 80px 120px;
+  
+  text-align: center;
+  background-color: aliceblue;
+
+}
+
+.Hobbies h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  position: relative;
+  color: #001F54;
+}
+
+.Hobbies .hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   
+  margin-bottom: 50px;
+  gap: 15px;
+}
+
+.Hobbies .hobby p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.Hobbies .hobby img {
+  width: 120px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.Hobbies .hobby audio {
+  width: 250px; 
+  outline: none;
+  margin-top: 5px;
+}
+
+
+/* Contact styling */
+.Contact{
+  padding: 80px;
+}
+
+.Contact h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #001F54;
+}
+
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Contact label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.Contact input,
+.Contact textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.Contact input[type="submit"] {
+  background-color: #001F54;
+  color: #fafafa;
+  padding: 20px;
+  border-radius: 9px;
+  border: 1px solid #333333;
+  cursor: pointer;
+   font-weight: 600;
+
+}
+
+
+/* footer styling */
+.footer {
+  background-color: #111;        
+  color: #ccc;                   
+  padding: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;               
+}
+
+
+.footer p {
+  margin: 0;
+  font-size: 20px;
+}
+ 
+
+.footer nav {
+  display: flex;
+  gap: 25px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+  transform: translateY(-2px);
+}
